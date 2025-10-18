@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Reservation Hotel Room</title>
+    <link rel="stylesheet" href="CSS/style.css" type="text/css" media="screen" />
+  </head>
+
+  <body 
+  
+    style="background: url('assets/images.jpg') no-repeat center center fixed; 
+          background-size: cover;">
+    
+    <div class="container">
+      
+      <h1>Reservation Hotel Room</h1>
+
+      <form action="" method="post">
+        <fieldset>
+          <legend>Personal Data</legend>
+          <ol>
+            <li>
+              <label for="nama">Name:</label><br />
+              <input type="text" id="nama" name="nama" size="20" />
+            </li>
+            <li>
+              <label for="gender">Gender:</label><br />
+              <input type="text" id="gender" name="gender" size="20" />
+            </li>
+            <li>
+              <label for="email">Email Address:</label><br />
+              <input type="text" id="email" name="email" size="20" />
+            </li>
+            <li>
+              <label for="telp">Telp Number:</label><br />
+              <input type="text" id="telp" name="telp" size="20" />
+            </li>
+          </ol>
+        </fieldset>
+
+        <fieldset class="left-legend">
+          <legend>Reservation Room Form</legend>
+          <ol>
+            <li>
+              <label for="namaR">Reservation Name</label><br />
+              <input type="text" id="namaR" name="namaR" size="20" />
+            </li>
+            <li>
+              <label for="book">Booking Date</label><br />
+              <input type="text" id="book" name="book" size="20" />
+            </li>
+            <li>
+              <label for="room_type">Room Type</label><br />
+              <select name="room_type" id="room_type">
+                <option>Deluxe</option>
+                <option>Standard</option>
+                <option>Suite</option>
+              </select>
+            </li>
+            <li>
+              <label for="bed_type">Bed Type</label><br />
+              <select name="bed_type" id="bed_type">
+                <option>Single Bed</option>
+                <option>Double Bed</option>
+                <option>Queen size</option>
+                <option>King size</option>
+              </select>
+            </li>
+            <li>
+              <label>Breakfast</label><br />
+              <input type="radio" id="breakfast_yes" name="breakfast" value="with" />
+              <label for="breakfast_yes">With Breakfast</label>
+              <input type="radio" id="breakfast_no" name="breakfast" value="without" />
+              <label for="breakfast_no">Without Breakfast</label>
+            </li>
+          </ol>
+        </fieldset>
+
+        <fieldset>
+          <legend>Payment</legend>
+          <ol>
+            <li>
+              <label for="check_in_date">Check in date</label><br />
+              <input type="text" id="check_in_date" name="check_in_date" size="30" />
+            </li>
+            <li>
+              <label for="check_out_date">Check out date</label><br />
+              <input type="text" id="check_out_date" name="check_out_date" size="30" />
+            </li>
+            <li>
+              <label for="payment_method">Payment Method</label><br />
+              <select name="payment_method" id="payment_method">
+                <option>Cash</option>
+                <option>Qris</option>
+                <option>Debit/Credit Card</option>
+              </select>
+            </li>
+          </ol>
+        </fieldset>
+
+        <p>
+          <input type="submit" id="konfirmasi" name="konfirmasi" value="Submit" />
+        </p>
+      </form>
+    </div>
+
+    
+  </body>
+</html>

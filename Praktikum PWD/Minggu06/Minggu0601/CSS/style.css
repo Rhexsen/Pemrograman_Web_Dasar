@@ -1,0 +1,206 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+   background-image: url("../assets/images.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(8px);
+  padding: 70px 80px;
+  border-radius: 25px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 1200px;
+  margin-top: 40px;
+  margin-left: 70px;
+  animation: fadeInUp 1.2s ease-in-out;
+  position: center;
+}
+
+h1{
+  position: relative;
+  font-weight: 800;
+  text-align: center;
+  font-size: 40px;
+  color: #1b4332;
+  letter-spacing: 1px;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  margin-bottom: 60px;
+  z-index: 10;
+  background: linear-gradient(90deg, rgba(196, 240, 215, 0.8), rgba(184, 241, 151, 0.7));
+  display: inline-block;
+  padding: 10px 25px;
+  border-radius: 15px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  animation: fadeInUp 1.2s ease-in-out;
+}
+
+h1::after{
+  content: "";
+  display: block;
+  width: 95%;
+  height: 4px;
+  background: linear-gradient(to right, #74c69d, #2d6a4f);
+  margin: 6px auto 0;
+  border-radius: 4px;
+}
+
+fieldset{
+  background: linear-gradient(135deg, rgba(180, 220, 190, 0.8), rgba(150, 190, 160, 0.8));
+  border: 2px solid rgba(90, 140, 100, 0.3);
+  border-radius: 20px;
+  padding: 35px 50px;
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto 60px 0;
+  margin-left: 8%;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeInUp 1s ease-in-out 0.6s forwards;
+}
+
+legend{
+  font-size: 18px;
+  font-weight: 900;
+  color: #2f3e46;
+  background: linear-gradient(135deg, rgba(205, 240, 215, 0.9), rgba(185, 230, 200, 0.9));
+  border: 2px solid rgba(100, 160, 110, 0.4);
+  padding: 6px 16px;
+  border-radius: 12px;
+  display: inline-block;
+  margin-top: 5px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  animation: fadeInUp 1s ease-in-out 0.8s forwards;
+}
+
+label{
+  display: inline-block;
+  width: 160px;
+  font-weight: 500;
+  color: #344e41;
+  font-size: 14px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea{
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #b7c9b8;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  font-size: 14px;
+  margin-bottom: 12px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-in-out 1s forwards;
+  transition: all 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+  border-color: #74c69d;
+  box-shadow: 0 0 6px rgba(116, 198, 157, 0.5);
+  background-color: #fff;
+  transform: scale(1.02);
+  outline: none;
+}
+
+input[type="submit"]{
+  display: block;
+  width: 200px;
+  background: linear-gradient(to right, #74c69d, #2d6a4f);
+  color: white;
+  border: none;
+  padding: 14px;
+  margin: 35px auto;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-in-out 1.2s forwards;
+  transition: all 0.4s ease-in-out;
+}
+
+input[type="submit"]:hover{
+  background: linear-gradient(to right, #52b788, #1b4332);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes fadeInUp{
+  from{
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeSlideIn{
+  from{
+    opacity: 0;
+    background-position: top;
+  }
+  to{
+    opacity: 1;
+    background-position: center;
+  }
+}
+
+@media (max-width: 768px){
+  .container{
+    width: 95%;
+    padding: 30px;
+  }
+
+fieldset{
+    width: 100%;
+    padding: 25px;
+    margin-left: 0;
+  }
+
+  label{
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  input,
+  select,i
+  textarea{
+    width: 100%;
+  }
+
+  h1{
+    font-size: 26px;
+  }
+}
